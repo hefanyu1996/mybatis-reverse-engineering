@@ -57,6 +57,9 @@
 		<table schema="" tableName="role"/>
 		<table schema="" tableName="role_permission"/>
 		<table schema="" tableName="users_role"/>
+		<table schema="" tableName="member"/>
+		<table schema="" tableName="traveller"/>
+		<table schema="" tableName="order_traveller"/>
 
 	</context>
 </generatorConfiguration>
