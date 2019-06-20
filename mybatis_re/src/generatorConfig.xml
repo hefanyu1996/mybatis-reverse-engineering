@@ -10,9 +10,9 @@
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
 		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
-		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-			connectionURL="jdbc:oracle:thin:@192.168.48.129:1521:orcl" userId="hefanyu"
-			password="hefanyu">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/pinyougoudb" userId="root"
+			password="root">
 		</jdbcConnection>
 		<!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
 			connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg" 
@@ -49,17 +49,32 @@
 		</javaClientGenerator>
 
 		<!-- 指定数据库表 -->
-		<table schema="" tableName="users"/>
-		<table schema="" tableName="syslog"/>
-		<table schema="" tableName="orders"/>
-		<table schema="" tableName="permission"/>
-		<table schema="" tableName="product"/>
-		<table schema="" tableName="role"/>
-		<table schema="" tableName="role_permission"/>
-		<table schema="" tableName="users_role"/>
-		<table schema="" tableName="member"/>
-		<table schema="" tableName="traveller"/>
-		<table schema="" tableName="order_traveller"/>
+		<table schema="" tableName="tb_address"></table>
+		<table schema="" tableName="tb_areas"></table>
+		<table schema="" tableName="tb_brand"></table>
+		<table schema="" tableName="tb_cities"></table>
+		<table schema="" tableName="tb_content"></table>
+		<table schema="" tableName="tb_content_category"></table>
+		<table schema="" tableName="tb_freight_template"></table>
+		<table schema="" tableName="tb_goods"></table>
+		<table schema="" tableName="tb_goods_desc"></table>
+		<table schema="" tableName="tb_item"></table>
+		<table schema="" tableName="tb_item_cat"></table>
+		<table schema="" tableName="tb_item_spec_option"></table>
+		<table schema="" tableName="tb_order"></table>
+		<table schema="" tableName="tb_order_item"></table>
+		<table schema="" tableName="tb_pay_log"></table>
+		<table schema="" tableName="tb_provinces"></table>
+		<table schema="" tableName="tb_seller"></table>
+		<table schema="" tableName="tb_specification"></table>
+		<table schema="" tableName="tb_specification_option"></table>
+		<table schema="" tableName="tb_type_template"></table>
+		<table schema="" tableName="tb_user"></table>
+
+		<!-- 有些表的字段需要指定java类型
+		<table schema="" tableName="">
+			<columnOverride column="" javaType="" />
+		</table> -->
 
 	</context>
 </generatorConfiguration>
